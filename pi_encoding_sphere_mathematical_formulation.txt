@@ -1,0 +1,68 @@
+
+# Mathematical Formulation of Pi-Encoding on a Sphere with Internal Torus Mapping
+
+## 1. Surface Encoding
+
+The surface of the sphere is parameterized using spherical coordinates:
+- Radius: $R = 1$
+- Polar angle: $\theta \in [0, \pi]$
+- Azimuthal angle: $\phi \in [0, 2\pi]$
+
+The Cartesian coordinates are given by:
+$x = R \sin\theta \cos\phi$
+$y = R \sin\theta \sin\phi$
+$z = R \cos\theta$
+
+Each point $(\theta_i, \phi_j)$ on the surface is assigned a color value based on the corresponding digit of $\pi$ and its prime properties:
+
+$C(\theta_i, \phi_j) = \begin{cases}
+10 + \pi[k] & \text{if } \pi[k] \text{ is prime} \\
+n_f + \pi[k]/10 & \text{otherwise}
+\end{cases}$
+
+where $\pi[k]$ is the $k$-th digit of $\pi$, and $n_f$ is the number of prime factors (with multiplicity) of $\pi[k]$.
+
+## 2. Internal Torus Mapping
+
+The internal structure is created by mapping a torus to points inside the sphere. The torus is parameterized by:
+- Major radius: $R_{torus} = 0.6$
+- Minor radius: $r_{torus} = 0.3$
+- Parameters: $u, v \in [0, 2\pi]$
+
+The torus coordinates are:
+$x_{torus} = (R_{torus} + r_{torus}\cos v)\cos u$
+$y_{torus} = (R_{torus} + r_{torus}\cos v)\sin u$
+$z_{torus} = r_{torus}\sin v$
+
+These are then mapped to points inside the sphere using a scaling factor:
+$\text{scale} = \frac{R_{sphere}}{\sqrt{x_{torus}^2 + y_{torus}^2 + z_{torus}^2}} \cdot \text{random}(0.1, 0.9)$
+
+The final internal coordinates are:
+$x_{internal} = x_{torus} \cdot \text{scale}$
+$y_{internal} = y_{torus} \cdot \text{scale}$
+$z_{internal} = z_{torus} \cdot \text{scale}$
+
+Each internal point is also assigned a color value based on the corresponding digit of $\pi$ and its prime properties, using the same formula as for the surface points.
+
+## 3. Connection to G⁴=1 Framework
+
+In the G⁴=1 framework, the gravitational coupling G varies with energy E according to:
+
+$G(E) = G_0 \left(\frac{E}{E_{Planck}}\right)^{-\alpha}$
+
+where $\alpha$ is chosen to satisfy G⁴=1.
+
+The mapping of $\pi$ digits to the sphere can be interpreted as encoding information at different energy scales:
+- Surface points represent higher energy scales (closer to the Planck scale)
+- Internal points represent lower energy scales
+
+The prime factorization properties of the $\pi$ digits determine the "resonance" between these different scales, creating a harmonic structure that reflects the running of G with energy in the G⁴=1 framework.
+
+## 4. Geometric Interpretation
+
+The resulting structure can be interpreted as a geometric manifestation of the connection between:
+- The transcendental nature of $\pi$
+- The fundamental properties of prime numbers
+- The scale-dependent nature of gravity in the G⁴=1 framework
+
+The sphere with its internal torus mapping represents a unified geometric object where these mathematical and physical concepts converge, revealing deep connections between number theory, geometry, and quantum gravity.

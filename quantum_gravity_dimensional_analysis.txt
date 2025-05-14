@@ -1,0 +1,15 @@
+# Dimensional Analysis in Quantum Gravity
+
+The study of quantum gravity requires a careful analysis of the dimensional relationships between fundamental constants.
+
+## Planck Units
+
+The Planck length, time, and mass are defined as:
+
+- Planck length: l_p = sqrt(hbar*G/c^3) ≈ 1.616 × 10^-35 m
+- Planck time: t_p = sqrt(hbar*G/c^5) ≈ 5.391 × 10^-44 s
+- Planck mass: m_p = sqrt(hbar*c/G) ≈ 2.176 × 10^-8 kg
+
+## Dimensional Relationships
+
+The relationship between these units forms the foundation of quantum gravity theories.
